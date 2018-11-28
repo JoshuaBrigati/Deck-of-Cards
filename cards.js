@@ -12,9 +12,25 @@ class Deck {
       }
     }
   }
+
+  Shuffle() {
+    const { deck } = this;
+
+    for (let i = deck.length - 1; i > 0; i--) {
+      let randomIndex = Math.floor(Math.random() * (i + 1));
+
+      let cardTemp = deck[i];
+      deck[i] = deck[randomIndex];
+      deck[randomIndex] = cardTemp;
+    }
+
+    return this;
+  }
 }
 
 const myDeck = new Deck();
 console.log("\n", myDeck.deck);
+myDeck.Shuffle();
+console.log("\n ", myDeck.deck);
 
 console.log("\nThank you so much for giving me a chance to display my skills!\n")
