@@ -2,7 +2,7 @@ class Deck {
   constructor() {
     this.deck = [];
     const suits = ["Clubs", "Diamonds", "Hearts", "Spades"];
-    const faceValues = ["Ace", "2", "3", "4", "5", "6", "7", "8", "9", "Jack", "Queen", "King"];
+    const faceValues = ["Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"];
 
     // combines each face value with a suit.
     // creates a deck of cards in order for Ace of Clubs to King of Spaces.
@@ -44,3 +44,5 @@ myDeck.Shuffle();
 console.log("\nHere is your card: ", myDeck.GiveOneCard());
 
 console.log("\nThank you so much for giving me a chance to display my skills!\n")
+
+module.exports = Deck;

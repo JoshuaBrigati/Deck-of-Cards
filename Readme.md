@@ -2,6 +2,7 @@
 
 Used a javascript class to create a deck of cards.
 
+
 ## Functions
 
 * Shuffle: Shuffles the current deck of cards.  
@@ -18,3 +19,10 @@ let myDeck = new Deck();
 myDeck.Shuffle();
 console.log("\nHere is your card: ", myDeck.GiveOneCard()); // Returns: Here is your card:  7 of Hearts
 ``` 
+
+## Test 
+
+To run tests:
+```
+$ npm test
+```

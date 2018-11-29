@@ -1,0 +1,24 @@
+{
+  "name": "robots-and-pencils",
+  "version": "1.0.0",
+  "description": "Cards!!!!",
+  "main": "cards.js",
+  "scripts": {
+    "test": "mocha",
+    "givecard": "node cards.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoshuaBrigati/Deck-of-Cards.git"
+  },
+  "author": "Joshua Brigati",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoshuaBrigati/Deck-of-Cards/issues"
+  },
+  "homepage": "https://github.com/JoshuaBrigati/Deck-of-Cards#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
+  }
+}
