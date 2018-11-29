@@ -43,6 +43,6 @@ let myDeck = new Deck();
 myDeck.Shuffle();
 console.log("\nHere is your card: ", myDeck.GiveOneCard());
 
-console.log("\nThank you so much for giving me a chance to display my skills!\n")
+console.log("\n\nThank you so much for giving me a chance to display my skills!\n")
 
 module.exports = Deck;

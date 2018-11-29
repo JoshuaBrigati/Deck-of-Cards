@@ -2,6 +2,23 @@
 
 Used a javascript class to create a deck of cards.
 
+## Setup
+  
+```
+$ git clone git@github.com:JoshuaBrigati/Deck-of-Cards.git  
+$ cd Deck-of-Cards  
+$ npm install  
+```  
+  
+This uses NodeJS to run the file.  
+run `$ which node` to see if you have it installed.  
+If you do not have node installed, install it from https://nodejs.org/en/
+
+# Run
+
+After going through the Setup step,  
+run ```$ npm run givecard``` to receive a random card from a shuffled deck.
+
 
 ## Functions
 
