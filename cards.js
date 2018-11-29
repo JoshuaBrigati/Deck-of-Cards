@@ -16,6 +16,8 @@ class Deck {
   Shuffle() {
     const { deck } = this;
 
+    // Shuffles the deck using the temp method.
+    // This is said to me more efficient than using ES6s' shuffling feature that uses destructuring
     for (let i = deck.length - 1; i > 0; i--) {
       let randomIndex = Math.floor(Math.random() * (i + 1));
 
