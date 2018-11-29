@@ -17,7 +17,7 @@ class Deck {
     const { deck } = this;
 
     // Shuffles the deck using the temp method.
-    // This is said to me more efficient than using ES6s' shuffling feature that uses destructuring
+    // This is said to me more efficient than using ES6s' shuffling feature that uses destructuring.
     for (let i = deck.length - 1; i > 0; i--) {
       let randomIndex = Math.floor(Math.random() * (i + 1));
 
@@ -28,11 +28,19 @@ class Deck {
 
     return this;
   }
+
+  GiveOneCard() {
+    const { deck } = this;
+
+    // returns a single random card.
+    let randomIndex = Math.floor(Math.random() * 52);
+
+    return deck[randomIndex];
+  }
 }
 
 let myDeck = new Deck();
-console.log("Original Deck: \n", myDeck.deck);
 myDeck.Shuffle();
-console.log("Deck after shuffled: \n", myDeck.deck);
+console.log("\nHere is your card: ", myDeck.GiveOneCard());
 
 console.log("\nThank you so much for giving me a chance to display my skills!\n")
