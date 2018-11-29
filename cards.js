@@ -28,9 +28,9 @@ class Deck {
   }
 }
 
-const myDeck = new Deck();
-console.log("\n", myDeck.deck);
+let myDeck = new Deck();
+console.log("Original Deck: \n", myDeck.deck);
 myDeck.Shuffle();
-console.log("\n ", myDeck.deck);
+console.log("Deck after shuffled: \n", myDeck.deck);
 
 console.log("\nThank you so much for giving me a chance to display my skills!\n")
